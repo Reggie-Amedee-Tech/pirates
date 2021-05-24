@@ -1,0 +1,76 @@
+.form{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.titleContainer{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.middleContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.lowerContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.crewContainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: orange;
+    
+}
+
+.crewBox{
+    display: flex;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
+
+.detailedPirateBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: orange;
+    
+}
+
+.middleBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aboutBox{
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+
+
