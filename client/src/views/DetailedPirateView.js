@@ -24,7 +24,9 @@ const Details = (props) => {
                 <div>
                     <p> Position: {pirates.position}</p>
                     <p> Treasures: {pirates.treasureChest}</p>
-                    <p>Your Attribute! {pirates.attribute}</p>
+                    <p>Peg Leg: {pirates.pegLeg ? <span>Yes</span> : <p>No!</p>}</p>
+                    <p>Eye Patch: {pirates.eyePatch ? <span>Yes</span> : <p>No!</p>}</p>
+                    <p>Hook Hand: {pirates.hookHand ? <span>Yes</span> : <p>No!</p>}</p>
                 </div>
 
             </div>

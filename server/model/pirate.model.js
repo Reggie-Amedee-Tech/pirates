@@ -9,7 +9,7 @@ const PirateSchema = new mongoose.Schema({
     imageUrl: {
         type: String,
         required: [true, "please add an image of your pirate!"]
-        
+
     },
     treasureChest: {
         type: Number,
@@ -19,17 +19,10 @@ const PirateSchema = new mongoose.Schema({
         type: String,
         required: [true, "Every pirate needs a catch phrase"]
     },
-    position: [{
-        type: String,
-        require: [true, "Arg, Select Your Position!"],
-        enum: ["Captain", "First Mate", "Boatswain", "Powder Monkey"]
 
-    }],
-    attribute: [{
-        type: String,
-        required: [true, "Choose an adornment, PIRATE!"],
-        enum: ["Peg Leg", "Eye Patch", "Hook Hand"]
-    }]
-}, {timestamps: true})
+    pegLeg: { type: Boolean, default: true },
+    eyePatch: { type: Boolean, default: true },
+    hookHand: { type: Boolean, default: true }
+}, { timestamps: true })
 
 module.exports = mongoose.model('Pirate', PirateSchema);
